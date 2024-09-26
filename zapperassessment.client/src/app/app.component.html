@@ -1,0 +1,19 @@
+<h1 id="tableLabel">Zapper Assessment</h1>
+
+<div class="container">
+  <div class="body">
+    <div class="content">
+      <label for="settingInput">Settings:</label>
+      <input type="text" id="settingInput" [(ngModel)]="settingInput"
+        maxlength="8" (input)="validateSettingInput($event)">
+
+      <label style="margin-left: 25px;" for="settingId">Setting:</label>
+      <input type="text" id="settingId" [(ngModel)]="settingId"
+        maxlength="1" (input)="validateSettingId($event)">
+
+      <button (click)="getUserSettingConfirmation()">Send Request</button>
+
+      <span style="margin-left: 25px;">{{ isUserSettingValid }}</span>
+    </div>
+  </div>
+</div>

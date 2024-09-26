@@ -1,0 +1,9 @@
+@ZapperAssessment.Server_HostAddress = https://localhost:7248
+
+GET {{ZapperAssessment.Server_HostAddress}}/api/usersetting/GetUserSettingConfirmation?settingInput=00010100&settingId=6
+
+###
+
+GET {{ZapperAssessment.Server_HostAddress}}/api/usersetting/GetValidUserSettingsFromLogs
+
+###
